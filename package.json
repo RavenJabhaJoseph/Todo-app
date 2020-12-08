@@ -1,16 +1,24 @@
 {
   "name": "Todo",
   "version": "1.0.0",
-  "description": "",
+  "description": "building a todo app using MERN STACK",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "start-watch": "nodemon index.js",
+    "dev": "concurrently \"yarn run start-watch\" \"cd client && yarn start\""
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Raven Jabha Joseph",
+  "license": "MIT",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.6"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
   }
 }
